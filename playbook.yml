@@ -1,0 +1,9 @@
+---
+- name: Prepare Nodes
+  hosts: all
+
+  tasks:
+    - name: Disable UFW
+      ufw:
+        state: enabled
+        policy: allow
