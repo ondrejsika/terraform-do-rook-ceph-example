@@ -3,7 +3,7 @@ variable "cloudflare_email" {}
 variable "cloudflare_token" {}
 
 variable "node_count" {
-  default = 5
+  default = 3
 }
 
 provider "digitalocean" {
