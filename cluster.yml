@@ -160,15 +160,7 @@ ignore_docker_version: false
 kubernetes_version: ""
 private_registries: []
 ingress:
-  provider: ""
-  options: {}
-  node_selector: {}
-  extra_args: {}
-  dns_policy: ""
-  extra_envs: []
-  extra_volumes: []
-  extra_volume_mounts: []
-  update_strategy: null
+  provider: none
 cluster_name: ""
 cloud_provider:
   name: ""
