@@ -59,16 +59,6 @@ resource "cloudflare_record" "node_record" {
   proxied = false
 }
 
-resource "cloudflare_record" "node_wildcard" {
-  count = var.node_count
-
-  domain = "sikademo.com"
-  name   = "*.rook${count.index}"
-  value  = "rook${count.index}.sikademo.com"
-  type   = "CNAME"
-  proxied = false
-}
-
 resource "digitalocean_loadbalancer" "rook" {
   name = "rook"
   region = "fra1"
