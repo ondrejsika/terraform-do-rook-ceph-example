@@ -24,7 +24,6 @@ data "digitalocean_ssh_key" "ondrejsika" {
 resource "digitalocean_droplet" "node" {
   count = var.node_count
 
-  // image  = "debian-10-x6"
   image  = "docker-18-04"
   name   = "rook-${count.index}"
   region = "fra1"
