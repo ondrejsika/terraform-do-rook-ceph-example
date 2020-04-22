@@ -1,2 +1,2 @@
 [nodes]
-rook[0:4].sikademo.com ansible_user=root ansible_python_interpreter=/usr/bin/python3
+rook[0:2].sikademo.com ansible_user=root ansible_python_interpreter=/usr/bin/python3
