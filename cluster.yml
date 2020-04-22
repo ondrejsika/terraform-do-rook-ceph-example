@@ -4,11 +4,11 @@ nodes:
 - address: rook0.sikademo.com
   port: "22"
   internal_address: ""
-  hostname_override: ""
   role:
   - controlplane
   - worker
   - etcd
+  hostname_override: "rook0"
   user: root
   docker_socket: /var/run/docker.sock
   ssh_key: ""
@@ -24,8 +24,8 @@ nodes:
   - controlplane
   - worker
   - etcd
+  hostname_override: "rook1"
   user: root
-  hostname_override: ""
   docker_socket: /var/run/docker.sock
   ssh_key: ""
   ssh_key_path: ~/.ssh/id_rsa
@@ -40,7 +40,7 @@ nodes:
   - controlplane
   - worker
   - etcd
-  hostname_override: ""
+  hostname_override: "rook2"
   user: root
   docker_socket: /var/run/docker.sock
   ssh_key: ""
@@ -160,7 +160,7 @@ ignore_docker_version: false
 kubernetes_version: ""
 private_registries: []
 ingress:
-  provider: none
+  provider: ""
   options: {}
   node_selector: {}
   extra_args: {}
