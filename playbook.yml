@@ -4,6 +4,7 @@
 
   tasks:
     - name: Disable UFW
-      ufw:
-        state: enabled
-        policy: allow
+      service:
+        name: ufw
+        state: stopped
+        enabled: false
