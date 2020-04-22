@@ -25,7 +25,7 @@ resource "digitalocean_droplet" "node" {
   count = var.node_count
 
   image  = "docker-18-04"
-  name   = "rook-${count.index}"
+  name   = "rook${count.index}"
   region = "fra1"
   size   = "s-2vcpu-4gb"
   ssh_keys = [

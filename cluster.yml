@@ -8,7 +8,7 @@ nodes:
   - controlplane
   - worker
   - etcd
-  hostname_override: "rook0"
+  hostname_override: ""
   user: root
   docker_socket: /var/run/docker.sock
   ssh_key: ""
@@ -24,7 +24,7 @@ nodes:
   - controlplane
   - worker
   - etcd
-  hostname_override: "rook1"
+  hostname_override: ""
   user: root
   docker_socket: /var/run/docker.sock
   ssh_key: ""
@@ -40,7 +40,7 @@ nodes:
   - controlplane
   - worker
   - etcd
-  hostname_override: "rook2"
+  hostname_override: ""
   user: root
   docker_socket: /var/run/docker.sock
   ssh_key: ""
